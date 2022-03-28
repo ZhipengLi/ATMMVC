@@ -54,9 +54,10 @@ namespace AutomatedTellerMachine
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+            // https://developers.facebook.com/apps/672971633827806/settings/basic/
+            app.UseFacebookAuthentication(
+               appId: "672971633827806",
+               appSecret: "bc11577265f4bfae6f2d9306213345cb");
 
             //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             //{
