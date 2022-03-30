@@ -37,7 +37,7 @@ namespace AutomatedTellerMachine.Controllers
         //[ActionName("about-this-atm")]
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.TheMessage = "Your contact page.";
 
             return View();
         }
@@ -45,8 +45,8 @@ namespace AutomatedTellerMachine.Controllers
         [HttpPost]
         public ActionResult Contact(string message)
         {
-            ViewBag.Message = $"We've got your message: {message}";
-            return View();
+            ViewBag.TheMessage = $"We've got your message: {message}";
+            return PartialView("_ContactThanks");
         }
 
         public ActionResult Foo()
