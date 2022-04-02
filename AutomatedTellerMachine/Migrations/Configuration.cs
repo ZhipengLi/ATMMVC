@@ -35,6 +35,19 @@
 
                 userManager.AddToRole(user.Id, "Admin");
             }
+            context.Transactions.Add(new Transaction { Amount=-300, CheckingAccountId=4 });
+            context.Transactions.Add(new Transaction { Amount= 1.5m, CheckingAccountId=4 });
+            context.Transactions.Add(new Transaction { Amount= 2.5m, CheckingAccountId=4 });
+            context.Transactions.Add(new Transaction { Amount= 3, CheckingAccountId=4 });
+            context.Transactions.Add(new Transaction { Amount= 34, CheckingAccountId=4 });
+            context.Transactions.Add(new Transaction { Amount= 5, CheckingAccountId=4 });
+            context.Transactions.Add(new Transaction { Amount= 6, CheckingAccountId=4 });
+            context.Transactions.Add(new Transaction { Amount= 7, CheckingAccountId=4 });
+            context.Transactions.Add(new Transaction { Amount= 8, CheckingAccountId=4 });
+            context.Transactions.Add(new Transaction { Amount= 9, CheckingAccountId=4 });
+            context.Transactions.Add(new Transaction { Amount= 10, CheckingAccountId=4 });
+            context.Transactions.Add(new Transaction { Amount= 11, CheckingAccountId=4 });
+            context.Transactions.Add(new Transaction { Amount= 12, CheckingAccountId=4 });
 
             //  This method will be called after migrating to the latest version.
 
