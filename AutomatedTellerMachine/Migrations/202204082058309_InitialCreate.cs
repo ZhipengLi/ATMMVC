@@ -102,7 +102,6 @@
                 })
                 .PrimaryKey(t => t.Id)
                 .Index(t => t.Name, unique: true, name: "RoleNameIndex");
-
         }
 
         public override void Down()
