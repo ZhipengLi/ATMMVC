@@ -27,6 +27,12 @@ namespace AutomatedTellerMachine.Models
             return new ApplicationDbContext();
         }
 
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<ApplicationDbContext, DbConfiguration>());
+            base.OnModelCreating(modelBuilder);
+        }
+
         public IDbSet<CheckingAccount> CheckingAccounts { get; set; }
 
         public IDbSet<Transaction> Transactions { get; set; }
